@@ -5,5 +5,5 @@ From: willmclaren/ensembl-vep
 This is a singularity file for VEP docker
 
 %runscript
-	echo "Test"
+	vep "$@"
 
