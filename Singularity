@@ -2,18 +2,18 @@ Bootstrap: docker
 From: willmclaren/ensembl-vep
 
 %help
-This is a singularity file for VEP docker (v1)
+This is a singularity file for VEP docker (v1)	
 
 %post
-	mkdir -p ./.vep;
-	mkdir -p ./vep_genomes;
-	./INSTALL.pl -a acf -s Saccharomyces_cerevisiae -y R64-1-1 -c ./.vep
-	./INSTALL.pl -a acf -s homo_sapiens -y GRCh37 -c ./.vep
+	mkdir -p ${SINGULARITY_ROOTFS}/.vep;
+	mkdir -p ${SINGULARITY_ROOTFS}/vep_genomes;
+	perl ./INSTALL.pl -a acf -s Saccharomyces_cerevisiae -y R64-1-1 -c ${SINGULARITY_ROOTFS}/.vep
+	perl ./INSTALL.pl -a acf -s homo_sapiens -y GRCh37 -c ${SINGULARITY_ROOTFS}/.vep
 	
 	git clone https://github.com/Ensembl/VEP_plugins.git
 	git clone https://github.com/griffithlab/pVAC-Seq.git
-	cp ./pVAC-Seq/pvacseq/VEP_plugins/Wildtype.pm ./VEP_plugins
-	rm -r ./pVAC-Seq
+	cp ${SINGULARITY_ROOTFS}/pVAC-Seq/pvacseq/VEP_plugins/Wildtype.pm ${SINGULARITY_ROOTFS}/VEP_plugins
+	rm -r ${SINGULARITY_ROOTFS}/pVAC-Seq
 	
 	
 %runscript
