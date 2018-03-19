@@ -1,12 +1,14 @@
 # sherlock_vep
 
-## Instructions for building
+## Build Local
 
 To build the container locally:
 
 ```
 sudo singularity build ensembl-vep Singularity
 ```
+
+## Cloud Build
 
 To build the container with a cloud builder, make sure you have a Google Cloud
 project, along with your [credentials file](https://cloud.google.com/video-intelligence/docs/common/auth#authenticating_with_application_default_credentials). The below commands
@@ -17,6 +19,10 @@ use the default builder, so you don't need to think about configuration.
 export SREGISTRY_GOOGLE_PROJECT=vanessasaur
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 ```
+
+**Important** for the below, the `sregistry` software has not been updated on pip
+wit this feature. It needs to be installed by cloning [this branch]().
+
 ```
 # 1. Install sregistry
 $ pip install sregistry[google-compute]
