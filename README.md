@@ -21,7 +21,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 ```
 
 **Important** for the below, the `sregistry` software has not been updated on pip
-wit this feature. It needs to be installed by cloning [this branch]().
+with this feature. It needs to be installed by cloning [this branch]().
 
 ```
 # 1. Install sregistry
