@@ -48,7 +48,8 @@ Robot Logger: http://35.230.66.133
 Allow a few minutes for web server install, beepboop!
 ```
 
-While you are waiting, you can check instances
+As a record of build testing, we have saved the builder's interface for [preview 
+here](https://vsoch.github.io/sherlock_vep). While you are waiting, you can check instances
 
 ```
 $ sregistry build instances
@@ -68,6 +69,11 @@ and then pull the container with the URI that you want.
 
 ```
 $ sregistry pull <container>
+$ sregistry pull eilon-s/sherlock_vep:latest@c76f5591cb09e7d24b485872c5983e1208cec509
+[client|google-compute] [database|sqlite:////home/vanessa/.singularity/sregistry.db]
+[bucket][sregistry-vanessa]
+Searching for eilon-s/sherlock_vep:latest@c76f5591cb09e7d24b485872c5983e1208cec509 in gs://sregistry-vanessa
+Progress |==|--------------------------------|   5.9% 
 ```
 
 ## Using container

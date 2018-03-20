@@ -1,0 +1,769 @@
+
+<!-- saved from url=(0021)http://35.230.34.229/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="./index_files/jquery.min.js"></script>
+<script src="./index_files/velocity.min.js"></script>
+<style>
+@-webkit-keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  background-color: black;
+}
+
+.four-oh-four {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 2;
+  background-color: black;
+  transition: opacity 300ms ease-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.four-oh-four .dJAX_internal {
+  opacity: 0.0;
+}
+.four-oh-four form, .four-oh-four input {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: black;
+}
+
+.terminal {
+  position: relative;
+  padding: 4rem;
+}
+.terminal .prompt {
+  color: #1ff042;
+  display: block;
+  font-family: 'AndaleMono', monospace;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.15em;
+  white-space: pre-wrap;
+  text-shadow: 0 0 2px rgba(31, 240, 66, 0.75);
+  line-height: 1;
+  margin-bottom: 0.75em;
+}
+.terminal .prompt:before {
+  content: '> ';
+  display: inline-block;
+}
+.terminal .new-output {
+  display: inline-block;
+}
+.terminal .new-output:after {
+  display: inline-block;
+  vertical-align: -0.15em;
+  width: 0.75em;
+  height: 1em;
+  margin-left: 5px;
+  background: #1ff042;
+  box-shadow: 1px 1px 1px rgba(31, 240, 66, 0.65), -1px -1px 1px rgba(31, 240, 66, 0.65), 1px -1px 1px rgba(31, 240, 66, 0.65), -1px 1px 1px rgba(31, 240, 66, 0.65);
+  -webkit-animation: cursor-blink 1.25s steps(1) infinite;
+  -moz-animation: cursor-blink 1.25s steps(1) infinite;
+  animation: cursor-blink 1.25s steps(1) infinite;
+  content: '';
+}
+
+.kittens p {
+  letter-spacing: 0;
+  opacity: 0;
+  line-height: 1rem;
+}
+
+.kitten-gif {
+  margin: 20px;
+  max-width: 300px;
+}
+
+.four-oh-four-form {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+  <form class="four-oh-four-form">i
+    <input type="text" class="404-input">
+  </form>
+
+  <div class="terminal"><p class="prompt">Singularity Builder Robot Logger, reporting for duty!</p><p class="prompt">Installing Singularity Dependencies<br>Preparing logging...
+Logs available at http://10.138.0.6/
+
+# SINGULARITY
+
+SINGULARITY_REPO: https://github.com/cclerget/singularity.git
+    The Singularity repository being cloned by the builder. 
+SINGULARITY_BRANCH: feature-squashbuild-secbuild-2.4.3
+    The branch of the repository being used.
+SINGULARITY_COMMIT: 
+    If defined, a particular commit to checkout.
+
+# SETTINGS
+
+SREGISTRY_USER_REPO: https://github.com/eilon-s/sherlock_vep
+    Your repository we are building from!
+SINGULARITY_RECIPE: Singularity
+    The recipe file in queue for build!
+SREGISTRY_USER_BRANCH: master
+    The branch we are cloning to do your build.
+SREGISTRY_USER_TAG: latest
+     The tag for the image.
+SREGISTRY_GOOGLE_STORAGE_PRIVATE: false
+    Building a private image?
+
+# Installing Singularity
+git clone -b feature-squashbuild-secbuild-2.4.3 https://github.com/cclerget/singularity.git
+Using commit 4cd89c97d338362e6e91ed1f90f128f984d60d61
+Install return value 0
+/usr/local/bin/singularity
+Cloning User Repository https://github.com/eilon-s/sherlock_vep
+git clone -b master https://github.com/eilon-s/sherlock_vep
+Using commit c76f5591cb09e7d24b485872c5983e1208cec509
+Found recipe: Singularity
+Start Time: Tue Mar 20 02:24:10 UTC 2018.
+Using container recipe deffile: Singularity
+Sanitizing environment
+[0mAdding base Singularity environment to container
+Docker image path: index.docker.io/willmclaren/ensembl-vep:latest
+Cache folder set to /root/.singularity/docker
+
+[1/20] ||----------------------------------|   0.0% 
+[1/20] |=|---------------------------------|   5.0% 
+[2/20] |===|-------------------------------|  10.0% 
+[3/20] |=====|-----------------------------|  15.0% 
+[4/20] |=======|---------------------------|  20.0% 
+[5/20] |========|--------------------------|  25.0% 
+[6/20] |==========|------------------------|  30.0% 
+[7/20] |============|----------------------|  35.0% 
+[8/20] |==============|--------------------|  40.0% 
+[9/20] |===============|-------------------|  45.0% 
+[10/20] |=================|-----------------|  50.0% 
+[11/20] |===================|---------------|  55.0% 
+[12/20] |=====================|-------------|  60.0% 
+[13/20] |======================|------------|  65.0% 
+[14/20] |========================|----------|  70.0% 
+[15/20] |==========================|--------|  75.0% 
+[16/20] |============================|------|  80.0% 
+[17/20] |=============================|-----|  85.0% 
+[18/20] |===============================|---|  90.0% 
+[19/20] |=================================|-|  95.0% 
+[20/20] |===================================| 100.0% 
+User defined %runscript found! Taking priority.
+Adding environment to container
+Running post scriptlet
+
+Setting up directories
+ - fetching BioPerl
+ - unpacking ./Bio/tmp/release-1-6-924.zip
+ - moving files
+Attempting to install Bio::DB::HTS and htslib.
+
+&gt;&gt;&gt; If this fails, try re-running with --NO_HTSLIB
+
+ - checking out HTSLib
+ - building HTSLIB in ./htslib
+In /htslib
+echo '/* Empty config.h generated by Makefile */' &gt; config.h
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o kfunc.o kfunc.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o knetfile.o knetfile.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o kstring.o kstring.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o bgzf.o bgzf.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o faidx.o faidx.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o hfile.o hfile.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o hfile_net.o hfile_net.c
+echo '#define HTS_VERSION "1.3.2-dirty"' &gt; version.h
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o hts.o hts.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o md5.o md5.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o regidx.o regidx.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o sam.o sam.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o synced_bcf_reader.o synced_bcf_reader.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o vcf_sweep.o vcf_sweep.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o tbx.o tbx.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o vcf.o vcf.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o vcfutils.o vcfutils.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_codecs.o cram/cram_codecs.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_decode.o cram/cram_decode.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_encode.o cram/cram_encode.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_external.o cram/cram_external.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_index.o cram/cram_index.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_io.o cram/cram_io.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_samtools.o cram/cram_samtools.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/cram_stats.o cram/cram_stats.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/files.o cram/files.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/mFILE.o cram/mFILE.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/open_trace_file.o cram/open_trace_file.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/pooled_alloc.o cram/pooled_alloc.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/rANS_static.o cram/rANS_static.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/sam_header.o cram/sam_header.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/string_alloc.o cram/string_alloc.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/thread_pool.o cram/thread_pool.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/vlen.o cram/vlen.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o cram/zfio.o cram/zfio.c
+ar -rc libhts.a kfunc.o knetfile.o kstring.o bgzf.o faidx.o hfile.o hfile_net.o hts.o md5.o regidx.o sam.o synced_bcf_reader.o vcf_sweep.o tbx.o vcf.o vcfutils.o cram/cram_codecs.o cram/cram_decode.o cram/cram_encode.o cram/cram_external.o cram/cram_index.o cram/cram_io.o cram/cram_samtools.o cram/cram_stats.o cram/files.o cram/mFILE.o cram/open_trace_file.o cram/pooled_alloc.o cram/rANS_static.o cram/sam_header.o cram/string_alloc.o cram/thread_pool.o cram/vlen.o cram/zfio.o
+ranlib libhts.a
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o kfunc.pico kfunc.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o knetfile.pico knetfile.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o kstring.pico kstring.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o bgzf.pico bgzf.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o faidx.pico faidx.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o hfile.pico hfile.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o hfile_net.pico hfile_net.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o hts.pico hts.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o md5.pico md5.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o regidx.pico regidx.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o sam.pico sam.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o synced_bcf_reader.pico synced_bcf_reader.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o vcf_sweep.pico vcf_sweep.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o tbx.pico tbx.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o vcf.pico vcf.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o vcfutils.pico vcfutils.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_codecs.pico cram/cram_codecs.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_decode.pico cram/cram_decode.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_encode.pico cram/cram_encode.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_external.pico cram/cram_external.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_index.pico cram/cram_index.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_io.pico cram/cram_io.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_samtools.pico cram/cram_samtools.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/cram_stats.pico cram/cram_stats.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/files.pico cram/files.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/mFILE.pico cram/mFILE.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/open_trace_file.pico cram/open_trace_file.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/pooled_alloc.pico cram/pooled_alloc.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/rANS_static.pico cram/rANS_static.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/sam_header.pico cram/sam_header.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/string_alloc.pico cram/string_alloc.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/thread_pool.pico cram/thread_pool.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/vlen.pico cram/vlen.c
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -fpic -c -o cram/zfio.pico cram/zfio.c
+gcc -shared -Wl,-soname,libhts.so.1 -pthread  -o libhts.so kfunc.pico knetfile.pico kstring.pico bgzf.pico faidx.pico hfile.pico hfile_net.pico hts.pico md5.pico regidx.pico sam.pico synced_bcf_reader.pico vcf_sweep.pico tbx.pico vcf.pico vcfutils.pico cram/cram_codecs.pico cram/cram_decode.pico cram/cram_encode.pico cram/cram_external.pico cram/cram_index.pico cram/cram_io.pico cram/cram_samtools.pico cram/cram_stats.pico cram/files.pico cram/mFILE.pico cram/open_trace_file.pico cram/pooled_alloc.pico cram/rANS_static.pico cram/sam_header.pico cram/string_alloc.pico cram/thread_pool.pico cram/vlen.pico cram/zfio.pico -lz -lm 
+ln -sf libhts.so libhts.so.1
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o bgzip.o bgzip.c
+gcc -pthread  -o bgzip bgzip.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o htsfile.o htsfile.c
+gcc -pthread  -o htsfile htsfile.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o tabix.o tabix.c
+gcc -pthread  -o tabix tabix.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/fieldarith.o test/fieldarith.c
+gcc -pthread  -o test/fieldarith test/fieldarith.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/hfile.o test/hfile.c
+gcc -pthread  -o test/hfile test/hfile.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/sam.o test/sam.c
+gcc -pthread  -o test/sam test/sam.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/test-regidx.o test/test-regidx.c
+gcc -pthread  -o test/test-regidx test/test-regidx.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/test_view.o test/test_view.c
+gcc -pthread  -o test/test_view test/test_view.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/test-vcf-api.o test/test-vcf-api.c
+gcc -pthread  -o test/test-vcf-api test/test-vcf-api.o libhts.a -lz 
+gcc -g -Wall -O2 -fPIC -Wno-unused -Wno-unused-result -I.  -c -o test/test-vcf-sweep.o test/test-vcf-sweep.c
+gcc -pthread  -o test/test-vcf-sweep test/test-vcf-sweep.o libhts.a -lz 
+ - unpacking ./Bio/tmp/biodbhts.zip to ./Bio/tmp/
+./Bio/tmp/Bio-DB-HTS-2.9 - moving files to ./biodbhts
+ - making Bio::DB:HTS
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Bio-DB-HTS' version '2.9'
+Building Bio-DB-HTS
+x86_64-linux-gnu-gcc -I/htslib/htslib -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -DXS_VERSION="2.9" -DVERSION="2.9" -fPIC -D_IOLIB=2 -D_FILE_OFFSET_BITS=64 -Wno-error -Wno-unused-result -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o lib/Bio/DB/HTS.o lib/Bio/DB/HTS.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Bio/DB/HTS/HTS.bs')
+x86_64-linux-gnu-gcc -shared -L/usr/local/lib -fstack-protector-strong -o blib/arch/auto/Bio/DB/HTS/HTS.so lib/Bio/DB/HTS.o -L/htslib -Wl,-rpath,/htslib -lhts -lpthread -lz
+x86_64-linux-gnu-gcc -I/htslib/htslib -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -DXS_VERSION="2.9" -DVERSION="2.9" -fPIC -D_IOLIB=2 -D_FILE_OFFSET_BITS=64 -Wno-error -Wno-unused-result -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o lib/Bio/DB/HTS/Faidx.o lib/Bio/DB/HTS/Faidx.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Bio/DB/HTS/Faidx/Faidx.bs')
+x86_64-linux-gnu-gcc -shared -L/usr/local/lib -fstack-protector-strong -o blib/arch/auto/Bio/DB/HTS/Faidx/Faidx.so lib/Bio/DB/HTS/Faidx.o -L/htslib -Wl,-rpath,/htslib -lhts -lpthread -lz
+
+Downloading required Ensembl API files
+ - fetching ensembl
+ - unpacking ./Bio/tmp/ensembl.zip
+ - moving files
+ - getting version information
+ - fetching ensembl-variation
+ - unpacking ./Bio/tmp/ensembl-variation.zip
+ - moving files
+ - getting version information
+ - fetching ensembl-funcgen
+ - unpacking ./Bio/tmp/ensembl-funcgen.zip
+ - moving files
+ - getting version information
+ - fetching ensembl-io
+ - unpacking ./Bio/tmp/ensembl-io.zip
+ - moving files
+ - getting version information
+
+Testing VEP installation
+/home/vep/src/ensembl-vep/t/TranscriptTree.t ................................. ok
+/home/vep/src/ensembl-vep/t/Utils.t .......................................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory.t .................................. ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_BED.t ...................... ok
+/home/vep/src/ensembl-vep/t/Stats.t .......................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache.t ......................... ok
+/home/vep/src/ensembl-vep/t/InputBuffer.t .................................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_VCF.t .............................. ok
+/home/vep/src/ensembl-vep/t/Parser.t ......................................... ok
+/home/vep/src/ensembl-vep/t/Runner.t ......................................... ok
+/home/vep/src/ensembl-vep/t/Parser_VEP_input.t ............................... ok
+/home/vep/src/ensembl-vep/t/version.t ........................................ ok
+/home/vep/src/ensembl-vep/t/bam_edit.t ....................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_RegFeat.t .............. ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_File_GTF.t ................ ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_Transcript.t .............. ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_VariationTabix.t .......... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File.t .......................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_VEP_output.t ....................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_StructuralVariation.t .. ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_Database_Transcript.t ..... ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_File_GFF.t ................ ok
+/home/vep/src/ensembl-vep/t/AnnotationSourceAdaptor.t ........................ ok
+/home/vep/src/ensembl-vep/t/Parser_HGVS.t .................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource.t ............................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_Variation.t ............... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_Variation.t ............ ok
+/home/vep/src/ensembl-vep/t/VariantRecoder.t ................................. ok
+/home/vep/src/ensembl-vep/t/Parser_ID.t ...................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_VCF.t ...................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_Transcript.t ........... ok
+/home/vep/src/ensembl-vep/t/CacheDir.t ....................................... ok
+/home/vep/src/ensembl-vep/t/Haplo_Parser_VCF.t ............................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_Tab.t .............................. ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_GTF.t ...................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_RegFeat.t ................. ok
+/home/vep/src/ensembl-vep/t/Config.t ......................................... ok
+/home/vep/src/ensembl-vep/t/Parser_Region.t .................................. ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_Cache_Transcript.t ........ ok
+/home/vep/src/ensembl-vep/t/Haplo_Runner.t ................................... ok
+/home/vep/src/ensembl-vep/t/Haplo_InputBuffer.t .............................. ok
+/home/vep/src/ensembl-vep/t/BaseVEP.t ........................................ ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_GFF.t ...................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_JSON.t ............................. ok
+/home/vep/src/ensembl-vep/t/FilterSet.t ...................................... ok
+/home/vep/src/ensembl-vep/t/Parser_VCF.t ..................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_BigWig.t ................... ok
+All tests successful.
+Files=47, Tests=1785, 95 wallclock secs ( 0.30 usr  0.06 sys + 90.30 cusr  2.82 csys = 93.48 CPU)
+Result: PASS
+ - OK!
+ - getting list of available cache files
+ - downloading ftp://ftp.ensembl.org/pub/release-91/variation/VEP/saccharomyces_cerevisiae_vep_91_R64-1-1.tar.gz
+ - unpacking saccharomyces_cerevisiae_vep_91_R64-1-1.tar.gz
+ - converting cache, this may take some time but will allow VEP to look up variants and frequency data much faster
+ - use CTRL-C to cancel if you do not wish to convert this cache now (you may run convert_cache.pl later)
+2018-03-20 02:28:10 - Processing saccharomyces_cerevisiae
+2018-03-20 02:28:10 - Processing version 91_R64-1-1
+2018-03-20 02:28:10 - Processing _var cache type
+
+[&gt;                                                          ]    [ 0% ]
+[===&gt;                                                       ]    [ 9% ]
+[======&gt;                                                    ]   [ 14% ]
+[=========&gt;                                                 ]   [ 19% ]
+[============&gt;                                              ]   [ 23% ]
+[==================&gt;                                        ]   [ 33% ]
+[====================&gt;                                      ]   [ 38% ]
+[=======================&gt;                                   ]   [ 42% ]
+[=============================&gt;                             ]   [ 52% ]
+[================================&gt;                          ]   [ 57% ]
+[===================================&gt;                       ]   [ 61% ]
+[======================================&gt;                    ]   [ 66% ]
+[========================================&gt;                  ]   [ 71% ]
+[===========================================&gt;               ]   [ 76% ]
+[==============================================&gt;            ]   [ 80% ]
+[=================================================&gt;         ]   [ 85% ]
+[=======================================================&gt;   ]   [ 95% ]
+[===========================================================]  [ 100% ]
+2018-03-20 02:28:13 - All done!
+ - downloading Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
+ - downloading Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz.fai
+ - downloading Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz.gzi
+
+The FASTA file should be automatically detected by the VEP when using --cache or --offline.
+If it is not, use "--fasta /home/vep/.vep/saccharomyces_cerevisiae/91_R64-1-1/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz"
+
+
+All done
+
+Setting up directories
+ - fetching BioPerl
+ - unpacking ./Bio/tmp/release-1-6-924.zip
+ - moving files
+Attempting to install Bio::DB::HTS and htslib.
+
+&gt;&gt;&gt; If this fails, try re-running with --NO_HTSLIB
+
+ - checking out HTSLib
+ - building HTSLIB in ./htslib
+In /htslib
+make: Nothing to be done for 'all'.
+ - unpacking ./Bio/tmp/biodbhts.zip to ./Bio/tmp/
+./Bio/tmp/Bio-DB-HTS-2.9 - moving files to ./biodbhts
+ - making Bio::DB:HTS
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Bio-DB-HTS' version '2.9'
+Building Bio-DB-HTS
+x86_64-linux-gnu-gcc -I/htslib/htslib -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -DXS_VERSION="2.9" -DVERSION="2.9" -fPIC -D_IOLIB=2 -D_FILE_OFFSET_BITS=64 -Wno-error -Wno-unused-result -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o lib/Bio/DB/HTS/Faidx.o lib/Bio/DB/HTS/Faidx.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Bio/DB/HTS/Faidx/Faidx.bs')
+x86_64-linux-gnu-gcc -shared -L/usr/local/lib -fstack-protector-strong -o blib/arch/auto/Bio/DB/HTS/Faidx/Faidx.so lib/Bio/DB/HTS/Faidx.o -L/htslib -Wl,-rpath,/htslib -lhts -lpthread -lz
+x86_64-linux-gnu-gcc -I/htslib/htslib -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -DVERSION="2.9" -DXS_VERSION="2.9" -fPIC -D_IOLIB=2 -D_FILE_OFFSET_BITS=64 -Wno-error -Wno-unused-result -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o lib/Bio/DB/HTS.o lib/Bio/DB/HTS.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Bio/DB/HTS/HTS.bs')
+x86_64-linux-gnu-gcc -shared -L/usr/local/lib -fstack-protector-strong -o blib/arch/auto/Bio/DB/HTS/HTS.so lib/Bio/DB/HTS.o -L/htslib -Wl,-rpath,/htslib -lhts -lpthread -lz
+
+Downloading required Ensembl API files
+ - fetching ensembl
+ - unpacking ./Bio/tmp/ensembl.zip
+ - moving files
+ - getting version information
+ - fetching ensembl-variation
+ - unpacking ./Bio/tmp/ensembl-variation.zip
+ - moving files
+ - getting version information
+ - fetching ensembl-funcgen
+ - unpacking ./Bio/tmp/ensembl-funcgen.zip
+ - moving files
+ - getting version information
+ - fetching ensembl-io
+ - unpacking ./Bio/tmp/ensembl-io.zip
+ - moving files
+ - getting version information
+
+Testing VEP installation
+/home/vep/src/ensembl-vep/t/TranscriptTree.t ................................. ok
+/home/vep/src/ensembl-vep/t/Utils.t .......................................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory.t .................................. ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_BED.t ...................... ok
+/home/vep/src/ensembl-vep/t/Stats.t .......................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache.t ......................... ok
+/home/vep/src/ensembl-vep/t/InputBuffer.t .................................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_VCF.t .............................. ok
+/home/vep/src/ensembl-vep/t/Parser.t ......................................... ok
+/home/vep/src/ensembl-vep/t/Runner.t ......................................... ok
+/home/vep/src/ensembl-vep/t/Parser_VEP_input.t ............................... ok
+/home/vep/src/ensembl-vep/t/version.t ........................................ ok
+/home/vep/src/ensembl-vep/t/bam_edit.t ....................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_RegFeat.t .............. ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_File_GTF.t ................ ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_Transcript.t .............. ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_VariationTabix.t .......... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File.t .......................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_VEP_output.t ....................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_StructuralVariation.t .. ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_Database_Transcript.t ..... ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_File_GFF.t ................ ok
+/home/vep/src/ensembl-vep/t/AnnotationSourceAdaptor.t ........................ ok
+/home/vep/src/ensembl-vep/t/Parser_HGVS.t .................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource.t ............................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_Variation.t ............... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_Variation.t ............ ok
+/home/vep/src/ensembl-vep/t/VariantRecoder.t ................................. ok
+/home/vep/src/ensembl-vep/t/Parser_ID.t ...................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_VCF.t ...................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Database_Transcript.t ........... ok
+/home/vep/src/ensembl-vep/t/CacheDir.t ....................................... ok
+/home/vep/src/ensembl-vep/t/Haplo_Parser_VCF.t ............................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_Tab.t .............................. ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_GTF.t ...................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_Cache_RegFeat.t ................. ok
+/home/vep/src/ensembl-vep/t/Config.t ......................................... ok
+/home/vep/src/ensembl-vep/t/Parser_Region.t .................................. ok
+/home/vep/src/ensembl-vep/t/Haplo_AnnotationSource_Cache_Transcript.t ........ ok
+/home/vep/src/ensembl-vep/t/Haplo_Runner.t ................................... ok
+/home/vep/src/ensembl-vep/t/Haplo_InputBuffer.t .............................. ok
+/home/vep/src/ensembl-vep/t/BaseVEP.t ........................................ ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_GFF.t ...................... ok
+/home/vep/src/ensembl-vep/t/OutputFactory_JSON.t ............................. ok
+/home/vep/src/ensembl-vep/t/FilterSet.t ...................................... ok
+/home/vep/src/ensembl-vep/t/Parser_VCF.t ..................................... ok
+/home/vep/src/ensembl-vep/t/AnnotationSource_File_BigWig.t ................... ok
+All tests successful.
+Files=47, Tests=1785, 91 wallclock secs ( 0.29 usr  0.08 sys + 86.86 cusr  2.61 csys = 89.84 CPU)
+Result: PASS
+ - OK!
+ - getting list of available cache files
+ - downloading ftp://ftp.ensembl.org/pub/release-91/variation/VEP/homo_sapiens_vep_91_GRCh37.tar.gz
+ - unpacking homo_sapiens_vep_91_GRCh37.tar.gz
+ - converting cache, this may take some time but will allow VEP to look up variants and frequency data much faster
+ - use CTRL-C to cancel if you do not wish to convert this cache now (you may run convert_cache.pl later)
+2018-03-20 02:39:57 - Processing homo_sapiens
+2018-03-20 02:39:57 - Processing version 91_GRCh37
+2018-03-20 02:39:57 - Processing _var cache type
+
+[&gt;                                                          ]    [ 0% ]
+[&gt;                                                          ]    [ 0% ]
+[&gt;                                                          ]    [ 1% ]
+[=&gt;                                                         ]    [ 5% ]
+[=&gt;                                                         ]    [ 6% ]
+[====&gt;                                                      ]   [ 11% ]
+[=======&gt;                                                   ]   [ 15% ]
+[=========&gt;                                                 ]   [ 18% ]
+[==========&gt;                                                ]   [ 20% ]
+[==========&gt;                                                ]   [ 21% ]
+[===========&gt;                                               ]   [ 21% ]
+[============&gt;                                              ]   [ 24% ]
+[================&gt;                                          ]   [ 31% ]
+[=================&gt;                                         ]   [ 31% ]
+[=================&gt;                                         ]   [ 32% ]
+[==================&gt;                                        ]   [ 34% ]
+[===================&gt;                                       ]   [ 35% ]
+[=====================&gt;                                     ]   [ 38% ]
+[=======================&gt;                                   ]   [ 43% ]
+[========================&gt;                                  ]   [ 43% ]
+[========================&gt;                                  ]   [ 44% ]
+[=========================&gt;                                 ]   [ 45% ]
+[=========================&gt;                                 ]   [ 46% ]
+[==========================&gt;                                ]   [ 47% ]
+[==========================&gt;                                ]   [ 48% ]
+[===========================&gt;                               ]   [ 48% ]
+[===========================&gt;                               ]   [ 49% ]
+[============================&gt;                              ]   [ 51% ]
+[=============================&gt;                             ]   [ 51% ]
+[=============================&gt;                             ]   [ 52% ]
+[=============================&gt;                             ]   [ 53% ]
+[================================&gt;                          ]   [ 56% ]
+[================================&gt;                          ]   [ 57% ]
+[===================================&gt;                       ]   [ 62% ]
+[===================================&gt;                       ]   [ 63% ]
+[====================================&gt;                      ]   [ 64% ]
+[=====================================&gt;                     ]   [ 65% ]
+[=========================================&gt;                 ]   [ 72% ]
+[===========================================&gt;               ]   [ 76% ]
+[============================================&gt;              ]   [ 76% ]
+[============================================&gt;              ]   [ 77% ]
+[==============================================&gt;            ]   [ 80% ]
+[==============================================&gt;            ]   [ 81% ]
+[===============================================&gt;           ]   [ 83% ]
+[================================================&gt;          ]   [ 83% ]
+[==================================================&gt;        ]   [ 88% ]
+[===================================================&gt;       ]   [ 88% ]
+[===================================================&gt;       ]   [ 89% ]
+[====================================================&gt;      ]   [ 90% ]
+[======================================================&gt;    ]   [ 94% ]
+[========================================================&gt;  ]   [ 98% ]
+[=========================================================&gt; ]   [ 98% ]
+[=========================================================&gt; ]   [ 99% ]
+[===========================================================]  [ 100% ]
+2018-03-20 04:22:42 - All done!
+
+WARNING: Changing FTP URL for GRCh37
+ - downloading Homo_sapiens.GRCh37.75.dna.primary_assembly.fa.gz
+ - converting sequence data to bgzip format, this may take some time...
+ - conversion successful
+ - indexing FASTA file
+ - indexing OK
+
+The FASTA file should be automatically detected by the VEP when using --cache or --offline.
+If it is not, use "--fasta /home/vep/.vep/homo_sapiens/91_GRCh37/Homo_sapiens.GRCh37.75.dna.primary_assembly.fa.gz"
+
+
+All done
+Adding runscript
+Adding runscript help
+Finalizing Singularity container
+Calculating final size for metadata...
+Skipping checks
+Building Singularity image...
+Singularity container built: c76f5591cb09e7d24b485872c5983e1208cec509.simg
+Cleaning up...
+Return value of 0.
+End Time: Tue Mar 20 05:03:37 UTC 2018.
+Upload with format: 
+[storage-bucket]     : sregistry-vanessa 
+[github-namespace]   : github.com/[container]/[branch]/[commit]
+  [container]        : eilon-s/sherlock_vep
+  [commit]           : c76f5591cb09e7d24b485872c5983e1208cec509
+  [branch]           : master
+[sha256sum]          : 591c0bd8879547909a98966ef43b17ce8d1a50712121d547b0e823f7452443fe
+[tag]                : latest
+gs://[storage-bucket]/github.com/[github-namespace]/[sha256sum]:[tag].simg
+
+gs://sregistry-vanessa/github.com/eilon-s/sherlock_vep/master/c76f5591cb09e7d24b485872c5983e1208cec509/591c0bd8879547909a98966ef43b17ce8d1a50712121d547b0e823f7452443fe:latest.simg
+
+gsutil cp -a public-read c76f5591cb09e7d24b485872c5983e1208cec509.simg gs://sregistry-vanessa/github.com/eilon-s/sherlock_vep/master/c76f5591cb09e7d24b485872c5983e1208cec509/591c0bd8879547909a98966ef43b17ce8d1a50712121d547b0e823f7452443fe:latest.simg
+</p><p class="prompt output new-output"></p></div>
+</div>
+
+
+<script>
+var inputReady = true;
+var input = $('.404-input');
+input.focus();
+$('.container').on('click', function(e){
+  input.focus();
+});
+
+function resetTerminal(content) {
+    var content = content || ''
+    content = '<p class="prompt">Singularity Builder Robot Logger, reporting for duty!</p>' + content;
+    content += '<p class="prompt output new-output"></p>';
+    $('.terminal').html(content);
+}
+
+input.on('keyup', function(e){
+  $('.new-output').text(input.val());
+  // console.log(inputReady);
+});
+
+$('.four-oh-four-form').on('submit', function(e){
+  e.preventDefault();
+  var val = $(this).children($('.404-input')).val().toLowerCase();
+  var href;
+
+  if (val === 'kittens'){
+    showKittens();
+  } else {
+    resetForm();
+  }
+});
+
+function updateLog() {
+    console.log("Updating log");
+    var content = ''
+    $.get('sregistry.log', function(result){
+        var lines = result.replace('\n','<br>')
+        content = content + '<p class="prompt">' + lines + '</p>'; 
+        resetTerminal(content);
+    });
+}
+
+setInterval(updateLog, 10000);
+
+function resetForm(withKittens){
+  var message = "Sorry that command is not recognized."
+  var input = $('.404-input');
+
+  if (withKittens){
+    $('.kittens').removeClass('kittens');
+    message = "Huzzzzzah Kittehs!"
+  }
+
+  $('.new-output').removeClass('new-output');
+  input.val('');
+  $('.terminal').append('<p class="prompt">' + message + '</p><p class="prompt output new-output"></p>');
+
+  $('.new-output').velocity(
+    'scroll'
+  ), {duration: 100}
+}
+
+	function showKittens(){
+		$('.terminal').append("<div class='kittens'>"+
+								 "<p class='prompt'>	                             ,----,         ,----,                                          ,---,</p>" +
+								 "<p class='prompt'>       ,--.                ,/   .`|       ,/   .`|                     ,--.              ,`--.' |</p>" +
+								 "<p class='prompt'>   ,--/  /|    ,---,     ,`   .'  :     ,`   .'  :     ,---,.        ,--.'|   .--.--.    |   :  :</p>" +
+								 "<p class='prompt'>,---,': / ' ,`--.' |   ;    ;     /   ;    ;     /   ,'  .' |    ,--,:  : |  /  /    '.  '   '  ;</p>" +
+								 "<p class='prompt'>:   : '/ /  |   :  : .'___,/    ,'  .'___,/    ,'  ,---.'   | ,`--.'`|  ' : |  :  /`. /  |   |  |</p>" +
+								 "<p class='prompt'>|   '   ,   :   |  ' |    :     |   |    :     |   |   |   .' |   :  :  | | ;  |  |--`   '   :  ;</p>" +
+								 "<p class='prompt'>'   |  /    |   :  | ;    |.';  ;   ;    |.';  ;   :   :  |-, :   |   \\ | : |  :  ;_     |   |  '</p>" +
+								 "<p class='prompt'>|   ;  ;    '   '  ; `----'  |  |   `----'  |  |   :   |  ;/| |   : '  '; |  \\  \\    `.  '   :  |</p>" +
+								 "<p class='prompt'>:   '   \\   |   |  |     '   :  ;       '   :  ;   |   :   .' '   ' ;.    ;   `----.   \\ ;   |  ;</p>" +
+								 "<p class='prompt'>'   : |.  \\ |   |  '     '   :  |       '   :  |   '   :  ;/| '   : |  ; .'  /  /`--'  /  `--..`;  </p>" +
+								 "<p class='prompt'>|   | '_\\.' '   :  |     ;   |.'        ;   |.'    |   |    \\ |   | '`--'   '--'.     /  .--,_   </p>" +
+								 "<p class='prompt'>'   : |     ;   |.'      '---'          '---'      |   :   .' '   : |         `--'---'   |    |`.  </p>" +
+								 "<p class='prompt'>;   |,'     '---'                                  |   | ,'   ;   |.'                    `-- -`, ; </p>" +
+								 "<p class='prompt'>'---'                                              `----'     '---'                        '---`'</p>" +
+								 "<p class='prompt'>                                                              </p></div>");
+
+		
+		var lines = $('.kittens p');
+		$.each(lines, function(index, line){
+			setTimeout(function(){
+				$(line).css({
+					"opacity": 1
+				});
+				textEffect($(line))
+			}, index * 100);
+		});
+
+		$('.new-output').velocity(
+			'scroll'
+		), {duration: 100}
+
+		setTimeout(function(){
+			var gif;
+			$.get('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=kittens', function(result){
+				gif = result.data.image_url;
+				$('.terminal').append('<img class="kitten-gif" src="' + gif + '"">');
+				resetForm(true);
+			});
+		}, (lines.length * 100) + 1000);
+	}
+
+	function textEffect(line){
+		var alpha = [';', '.', ',', ':', ';', '~', '`'];
+		var animationSpeed = 10;
+		var index = 0;
+		var string = line.text();
+		var splitString = string.split("");
+		var copyString = splitString.slice(0);
+
+		var emptyString = copyString.map(function(el){
+		    return [alpha[Math.floor(Math.random() * (alpha.length))], index++];
+		})
+
+		emptyString = shuffle(emptyString);
+
+		$.each(copyString, function(i, el){
+		    var newChar = emptyString[i];
+		    toUnderscore(copyString, line, newChar);
+
+		    setTimeout(function(){
+		      fromUnderscore(copyString, splitString, newChar, line);
+		    },i * animationSpeed);
+		  })
+	}
+
+	function toUnderscore(copyString, line, newChar){
+		copyString[newChar[1]] = newChar[0];
+		line.text(copyString.join(''));
+	}
+
+	function fromUnderscore(copyString, splitString, newChar, line){
+		copyString[newChar[1]] = splitString[newChar[1]];
+		line.text(copyString.join(""));
+	}
+
+
+	function shuffle(o){
+	    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	    return o;
+	};
+</script>
+
+
+</body></html>
