@@ -1,0 +1,68 @@
+{
+    "data": {
+        "author": "Vanessa Sochat",
+        "config": {
+            "disks": [],
+            "labels": [
+                {
+                    "key": "sregistry",
+                    "value": "builder"
+                }
+            ],
+            "networkInterfaces": [
+                {
+                    "accessConfigs": [
+                        {
+                            "name": "External NAT",
+                            "type": "ONE_TO_ONE_NAT"
+                        }
+                    ],
+                    "network": "global/networks/default"
+                }
+            ],
+            "serviceAccounts": [
+                {
+                    "email": "default",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/compute",
+                        "https://www.googleapis.com/auth/devstorage.read_write",
+                        "https://www.googleapis.com/auth/logging.write"
+                    ]
+                }
+            ],
+            "tags": {
+                "items": [
+                    "google-compute",
+                    "http-server",
+                    "https-server"
+                ]
+            }
+        },
+        "id": "/cloud/google/compute/ubuntu/securebuild-2.4.3",
+        "metadata": {
+            "GOOGLE_COMPUTE_IMAGE_FAMILY": "debian-8",
+            "GOOGLE_COMPUTE_PROJECT": "debian-cloud",
+            "SINGULARITY_BRANCH": "feature-squashbuild-secbuild-2.4.3",
+            "SINGULARITY_COMMIT": "",
+            "SINGULARITY_REPO": "https://github.com/cclerget/singularity.git",
+            "SREGISTRY_BUILDER_BRANCH": "",
+            "SREGISTRY_BUILDER_COMMIT": "",
+            "SREGISTRY_BUILDER_KILLHOURS": "10",
+            "SREGISTRY_BUILDER_RUNSCRIPT": "run.sh",
+            "SREGISTRY_BUILDER_TAG": "",
+            "SREGISTRY_BUILDER_disk_size": "500",
+            "SREGISTRY_BUILDER_machine_type": "n1-standard-1",
+            "SREGISTRY_CONTACT": "",
+            "SREGISTRY_GOOGLE_STORAGE_PRIVATE": "false"
+        },  
+        "path": "_cloud/google/compute/ubuntu/securebuild-2.4.3.json",
+        "repo": "https://www.github.com/singularityhub/builders",
+        "tags": [
+            "ubuntu",
+            "singularity"
+        ]
+    },
+    "links": {
+        "self": "https://singularityhub.github.io/builders_cloud/google/compute/ubuntu/securebuild-2.4.3.json"
+    }
+}
